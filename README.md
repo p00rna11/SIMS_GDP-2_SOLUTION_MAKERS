@@ -5,17 +5,25 @@
   <br>
   Tools used
   <table>
-    <th>
-      <td>tool</td>
-      <td>Used For</td>
-    </th>
+    <tr>
+      <th>tool</th>
+      <th>Used For</th>
+    </tr>
     <tr>
       <td>android studio</td>
       <td>Development</td>
     </tr>
+        <tr>
+      <td>Java</td>
+      <td>Development Language</td>
+    </tr>
     <tr>
       <td>Genymotion</td>
       <td>Testing</td>
+    </tr>
+     <tr>
+      <td>Firebase</td>
+      <td>Database</td>
     </tr>
   </table>
 </p>
