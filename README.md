@@ -26,4 +26,6 @@
       <td>Database</td>
     </tr>
   </table>
+  <br>
+    Create a Branch on your name, Publish the branch now continue working on that branch whenever you commit publish through your branch and we will merge the code into master whenever you are done doing your part we are basically using Trunk based devolopment to get rid of merge conflicts.
 </p>
