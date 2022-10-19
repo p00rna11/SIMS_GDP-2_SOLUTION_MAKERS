@@ -17,5 +17,5 @@
       <td>Genymotion</td>
       <td>Testing</td>
     </tr>
-  
+  </table>
 </p>
