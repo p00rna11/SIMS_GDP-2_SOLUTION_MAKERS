@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingTop="@dimen/_5sdp"
+    android:paddingLeft="@dimen/_10sdp"
+    android:paddingRight="@dimen/_10sdp"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".student.FindInternship">
+
+    <ImageView
+        android:layout_width="@dimen/_30sdp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:src="@drawable/searchlogo"
+        android:id="@+id/imageIcon"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="@dimen/_30sdp"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:hint="search"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:id="@+id/enterSearch"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/imageIcon"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="@dimen/_30sdp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageIcon"
+        android:id="@+id/searchList"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
