@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.internshipmanagementsystem">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.InternshipManagementSystem">
+        <activity
+            android:name=".student.InternShipUpdateone"
+            android:exported="false" />
+        <activity
+            android:name=".student.InternShipUpdatetwo"
+            android:exported="false" />
+        <activity
+            android:name=".faculty.InternStudentDetails"
+            android:exported="false" />
+        <activity
+            android:name=".faculty.NeedApprovalsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".faculty.OutStateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".faculty.StateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".faculty.CurrentSemeterInternActivity"
+            android:exported="false" />
+        <activity
+            android:name=".student.InternshipListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".student.EmployerInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".student.UpdateIntershipDetails"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".faculty.IndividualListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".faculty.FacultyLoginActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".faculty.FacultyOverallList"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".admin.DisplayAllSupervisors"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".admin.DisplayAllStudents"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".student.ConfirmationActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".student.StudentAgreement"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".student.FindInternship"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".student.UpdateDetails"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".student.Status"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".student.ApplyForInternship"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".admin.AdminLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".student.StudentDashboard"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".student.StudentLoginActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".admin.AdminDashboard"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".faculty.FacultyDashboard"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".Splashscreen"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

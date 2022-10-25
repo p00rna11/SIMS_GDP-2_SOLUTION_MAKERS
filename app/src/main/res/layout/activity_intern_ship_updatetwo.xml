@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".student.ApplyForInternship"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".student.ApplyForInternship"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Info"
+            android:layout_margin="@dimen/_5sdp"
+            android:textSize="@dimen/_24sdp"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-black"
+            android:background="@color/northwest_green"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColorHint="@color/northwest_green"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:background="#FFF3EDED"
+                android:hint="Faculty name"
+                android:id="@+id/enterFacultyname"
+                android:ems="10"
+                android:inputType="text"
+                android:textSize="22sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColorHint="@color/northwest_green"
+                android:hint="Faculty MailID"
+                android:id="@+id/enterFacultymail"
+                android:background="#FFF3EDED"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:textSize="22sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="#FFF3EDED"
+                android:textColorHint="@color/northwest_green"
+                android:hint="Company name"
+                android:id="@+id/enterCompanyname"
+                android:ems="10"
+                android:inputType="text"
+                android:textSize="22sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="#FFF3EDED"
+                android:textColorHint="@color/northwest_green"
+                android:hint="Company Contact number"
+                android:ems="10"
+                android:id="@+id/entercompanucontact"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:textSize="22sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:id="@+id/entercompanymail"
+                android:textColorHint="@color/northwest_green"
+                android:hint="Company mail"
+                android:ems="10"
+                android:background="#FFF3EDED"
+                android:inputType="textEmailAddress"
+                android:textSize="22sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColorHint="@color/northwest_green"
+                android:hint="Company address"
+                android:id="@+id/entercompanyaddress"
+                android:background="#FFF3EDED"
+                android:ems="10"
+                android:inputType="text"
+                android:textSize="22sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#FFF3EDED"
+            android:id="@+id/startDate"
+            android:textSize="22sp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textColor="@color/black"
+            android:gravity="start |center"
+            android:layout_gravity="start"
+            android:paddingLeft="@dimen/_10sdp"
+            android:text="Start Date"
+            android:layout_height="@dimen/_40sdp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#FFF3EDED"
+            android:id="@+id/endDate"
+            android:textSize="22sp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textColor="@color/black"
+            android:gravity="start |center"
+            android:layout_gravity="start"
+            android:paddingLeft="@dimen/_10sdp"
+            android:text="End Date"
+            android:layout_height="@dimen/_40sdp"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColorHint="@color/gray"
+                android:hint="Hours of work"
+                android:background="#FFF3EDED"
+                android:ems="10"
+                android:id="@+id/enterhoursofwork"
+                android:inputType="number"
+                android:textSize="22sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/northwest_green"
+            android:padding="18dp"
+            android:text="Submit"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</ScrollView>
