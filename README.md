@@ -9,10 +9,10 @@
   <br>
   Tools used
   <table>
-    <th>
+    <tr>
       <td>tool</td>
       <td>Used For</td>
-    </th>
+    </tr>
     <tr>
       <td>android studio</td>
       <td>Development</td>
