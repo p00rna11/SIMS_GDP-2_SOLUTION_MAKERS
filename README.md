@@ -10,8 +10,8 @@
   Tools used
   <table>
     <tr>
-      <td>tool</td>
-      <td>Used For</td>
+      <td><b>tool</b></td>
+      <td><b>Used For</b></td>
     </tr>
     <tr>
       <td>android studio</td>
