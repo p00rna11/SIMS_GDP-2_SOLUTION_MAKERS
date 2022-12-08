@@ -3,21 +3,64 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/S545433/Downloads/oct_17_Internships (1)/Internships_14/Internships/app/src/main/res/layout/activity_apply_for_internship.xml" value="0.10144927536231885" />
-        <entry key="..\:/Users/S545433/Downloads/oct_17_Internships (1)/Internships_14/Internships/app/src/main/res/layout/activity_employer_info.xml" value="0.10144927536231885" />
-        <entry key="..\:/Users/S545433/Downloads/oct_17_Internships (1)/Internships_14/Internships/app/src/main/res/layout/activity_find_internship.xml" value="0.5" />
-        <entry key="..\:/Users/S545433/Downloads/oct_17_Internships (1)/Internships_14/Internships/app/src/main/res/layout/activity_individual_list.xml" value="0.10144927536231885" />
-        <entry key="..\:/Users/S545433/Downloads/oct_17_Internships (1)/Internships_14/Internships/app/src/main/res/layout/activity_intern_ship_updateone.xml" value="0.10144927536231885" />
-        <entry key="..\:/Users/S545433/Downloads/oct_17_Internships (1)/Internships_14/Internships/app/src/main/res/layout/activity_intern_ship_updatetwo.xml" value="0.10144927536231885" />
-        <entry key="..\:/Users/S545433/Downloads/oct_17_Internships (1)/Internships_14/Internships/app/src/main/res/layout/activity_internship_list.xml" value="0.10144927536231885" />
-        <entry key="..\:/Users/S545433/Downloads/oct_17_Internships (1)/Internships_14/Internships/app/src/main/res/layout/activity_status.xml" value="0.10144927536231885" />
-        <entry key="..\:/Users/S545433/Downloads/oct_17_Internships (1)/Internships_14/Internships/app/src/main/res/layout/activity_student_agreement.xml" value="0.10144927536231885" />
-        <entry key="..\:/Users/S545433/Downloads/oct_17_Internships (1)/Internships_14/Internships/app/src/main/res/layout/activity_student_dashboard.xml" value="0.10144927536231885" />
-        <entry key="..\:/Users/S545433/Downloads/oct_17_Internships (1)/Internships_14/Internships/app/src/main/res/layout/activity_student_login.xml" value="0.10144927536231885" />
-        <entry key="..\:/Users/S545433/Downloads/oct_17_Internships (1)/Internships_14/Internships/app/src/main/res/layout/activity_update_details.xml" value="0.10144927536231885" />
-        <entry key="..\:/Users/S545433/Downloads/oct_17_Internships (1)/Internships_14/Internships/app/src/main/res/layout/activity_update_intership_details.xml" value="0.10144927536231885" />
-        <entry key="..\:/Users/S545433/Downloads/oct_17_Internships (1)/Internships_14/Internships/app/src/main/res/layout/list_item.xml" value="0.10144927536231885" />
-        <entry key="..\:/Users/s545402/Documents/GitHub/SIMS_GDP-2_SOLUTION_MAKERS/app/src/main/res/layout/activity_admin_login.xml" value="0.1408514492753623" />
+        <entry key="..\:/Projectss/freelancing/android/Internships_14/Internships/app/src/main/res/drawable/rectablebox.xml" value="0.226" />
+        <entry key="..\:/Projectss/freelancing/android/Internships_14/Internships/app/src/main/res/layout/activity_admin_dashboard.xml" value="0.25416666666666665" />
+        <entry key="..\:/Projectss/freelancing/android/Internships_14/Internships/app/src/main/res/layout/activity_apply_for_internship.xml" value="0.1838768115942029" />
+        <entry key="..\:/Projectss/freelancing/android/Internships_14/Internships/app/src/main/res/layout/activity_confirmation.xml" value="0.22826086956521738" />
+        <entry key="..\:/Projectss/freelancing/android/Internships_14/Internships/app/src/main/res/layout/activity_current_semester.xml" value="0.25416666666666665" />
+        <entry key="..\:/Projectss/freelancing/android/Internships_14/Internships/app/src/main/res/layout/activity_current_semeter_intern.xml" value="0.25416666666666665" />
+        <entry key="..\:/Projectss/freelancing/android/Internships_14/Internships/app/src/main/res/layout/activity_employer_info.xml" value="0.22826086956521738" />
+        <entry key="..\:/Projectss/freelancing/android/Internships_14/Internships/app/src/main/res/layout/activity_faculty_overall_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/Projectss/freelancing/android/Internships_14/Internships/app/src/main/res/layout/activity_intern_ship_updateone.xml" value="0.22826086956521738" />
+        <entry key="..\:/Projectss/freelancing/android/Internships_14/Internships/app/src/main/res/layout/activity_intern_ship_updatetwo.xml" value="0.22826086956521738" />
+        <entry key="..\:/Projectss/freelancing/android/Internships_14/Internships/app/src/main/res/layout/activity_intern_student_details.xml" value="0.25416666666666665" />
+        <entry key="..\:/Projectss/freelancing/android/Internships_14/Internships/app/src/main/res/layout/activity_internship_list.xml" value="0.22826086956521738" />
+        <entry key="..\:/Projectss/freelancing/android/Internships_14/Internships/app/src/main/res/layout/activity_need_approvals.xml" value="0.25416666666666665" />
+        <entry key="..\:/Projectss/freelancing/android/Internships_14/Internships/app/src/main/res/layout/activity_out_state_intern.xml" value="0.25416666666666665" />
+        <entry key="..\:/Projectss/freelancing/android/Internships_14/Internships/app/src/main/res/layout/activity_prevoius_semeter_intern.xml" value="0.25416666666666665" />
+        <entry key="..\:/Projectss/freelancing/android/Internships_14/Internships/app/src/main/res/layout/activity_state.xml" value="0.25416666666666665" />
+        <entry key="..\:/Projectss/freelancing/android/Internships_14/Internships/app/src/main/res/layout/activity_status.xml" value="0.22826086956521738" />
+        <entry key="..\:/Projectss/freelancing/android/Internships_14/Internships/app/src/main/res/layout/activity_student_agreement.xml" value="0.22826086956521738" />
+        <entry key="..\:/Projectss/freelancing/android/Internships_14/Internships/app/src/main/res/layout/activity_student_dashboard.xml" value="0.22826086956521738" />
+        <entry key="..\:/Projectss/freelancing/android/Internships_14/Internships/app/src/main/res/layout/activity_update_details.xml" value="0.12360688956433637" />
+        <entry key="..\:/Projectss/freelancing/android/Internships_14/Internships/app/src/main/res/layout/list_item.xml" value="0.22826086956521738" />
+        <entry key="..\:/Projectss/freelancing/android/Internships_14/Internships/app/src/main/res/layout/status_list_item.xml" value="0.22826086956521738" />
+        <entry key="..\:/Projectss/freelancing/android/Internships_14/Internships/app/src/main/res/layout/totalintern_list_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Projectss/freelancing/newInternshipProjects/Internships_14/Internships/app/src/main/res/layout/activity_apply_for_internship.xml" value="0.2" />
+        <entry key="..\:/Projectss/freelancing/newInternshipProjects/Internships_14/Internships/app/src/main/res/layout/activity_current_semester.xml" value="0.22826086956521738" />
+        <entry key="..\:/Projectss/freelancing/newInternshipProjects/Internships_14/Internships/app/src/main/res/layout/activity_current_semeter_intern.xml" value="0.22826086956521738" />
+        <entry key="..\:/Projectss/freelancing/newInternshipProjects/Internships_14/Internships/app/src/main/res/layout/activity_faculty_overall_list.xml" value="0.264" />
+        <entry key="..\:/Projectss/freelancing/newInternshipProjects/Internships_14/Internships/app/src/main/res/layout/activity_internship_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/Projectss/freelancing/newInternshipProjects/Internships_14/Internships/app/src/main/res/layout/activity_prevoius_semeter_intern.xml" value="0.22826086956521738" />
+        <entry key="..\:/Projectss/freelancing/newInternshipProjects/Internships_14/Internships/app/src/main/res/layout/activity_status.xml" value="0.25416666666666665" />
+        <entry key="..\:/Projectss/freelancing/newInternshipProjects/Internships_14/Internships/app/src/main/res/layout/activity_student_dashboard.xml" value="0.25416666666666665" />
+        <entry key="..\:/Projectss/freelancing/newInternshipProjects/Internships_14/Internships/app/src/main/res/layout/list_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Projectss/freelancing/newInternshipProjects/Internships_14/Internships/app/src/main/res/layout/status_list_item.xml" value="0.22826086956521738" />
+        <entry key="..\:/Projectss/freelancing/newInternshipProjects/Internships_14/Internships/app/src/main/res/layout/totalintern_list_item.xml" value="0.22826086956521738" />
+        <entry key="..\:/android/Internship/app/src/main/res/drawable/rectablebox.xml" value="0.161" />
+        <entry key="..\:/android/Internship/app/src/main/res/drawable/rectableboxxx.xml" value="0.161" />
+        <entry key="..\:/android/Internship/app/src/main/res/layout/activity_faculty_overall_list.xml" value="0.19739583333333333" />
+        <entry key="..\:/android/Internship/app/src/main/res/layout/activity_intern_student_details.xml" value="0.19739583333333333" />
+        <entry key="..\:/android/Internship/app/src/main/res/layout/alert_label_editor.xml" value="0.19739583333333333" />
+        <entry key="..\:/android/Internships/app/src/main/res/drawable/progress_animation.xml" value="0.1" />
+        <entry key="..\:/android/Internships/app/src/main/res/layout/activity_faculty_overall_list.xml" value="0.19739583333333333" />
+        <entry key="..\:/android/Internships/app/src/main/res/layout/activity_intern_student_details.xml" value="0.33" />
+        <entry key="..\:/android/Internships/app/src/main/res/layout/activity_need_approvals.xml" value="0.19739583333333333" />
+        <entry key="..\:/android/Internships/app/src/main/res/layout/activity_offerletter_preview.xml" value="0.19739583333333333" />
+        <entry key="..\:/android/Internships/app/src/main/res/layout/activity_status.xml" value="0.19739583333333333" />
+        <entry key="..\:/android/Internships/app/src/main/res/layout/alert_label_editor.xml" value="0.19739583333333333" />
+        <entry key="..\:/android/Internships/app/src/main/res/layout/custom_edit_layout.xml" value="0.19635416666666666" />
+        <entry key="..\:/android/Internships/app/src/main/res/layout/status_list_item.xml" value="0.19739583333333333" />
+        <entry key="..\:/android/Internships/app/src/main/res/layout/totalintern_list_item.xml" value="0.19739583333333333" />
+        <entry key="..\:/android/dronesample/Internships_14/Internships/app/src/main/res/layout/activity_current_semeter_intern.xml" value="0.19739583333333333" />
+        <entry key="..\:/android/dronesample/Internships_14/Internships/app/src/main/res/layout/activity_faculty_overall_list.xml" value="0.19739583333333333" />
+        <entry key="..\:/android/dronesample/Internships_14/Internships/app/src/main/res/layout/activity_intern_student_details.xml" value="0.33" />
+        <entry key="..\:/android/dronesample/Internships_14/Internships/app/src/main/res/layout/activity_internship_list.xml" value="0.19739583333333333" />
+        <entry key="..\:/android/dronesample/Internships_14/Internships/app/src/main/res/layout/activity_need_approvals.xml" value="0.19739583333333333" />
+        <entry key="..\:/android/dronesample/Internships_14/Internships/app/src/main/res/layout/activity_out_state_intern.xml" value="0.19739583333333333" />
+        <entry key="..\:/android/dronesample/Internships_14/Internships/app/src/main/res/layout/activity_state.xml" value="0.19739583333333333" />
+        <entry key="..\:/android/dronesample/Internships_14/Internships/app/src/main/res/layout/list_item.xml" value="0.33" />
+        <entry key="..\:/android/dronesample/Internships_14/Internships/app/src/main/res/layout/totalintern_list_item.xml" value="0.19635416666666666" />
       </map>
     </option>
   </component>

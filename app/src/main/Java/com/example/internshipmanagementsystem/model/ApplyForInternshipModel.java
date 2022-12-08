@@ -1,6 +1,8 @@
 package com.example.internshipmanagementsystem.model;
 
-public class ApplyForInternshipModel {
+import java.io.Serializable;
+
+public class ApplyForInternshipModel implements Serializable {
     String FirstName;
     String MiddleName;
     String LastName;
@@ -23,6 +25,42 @@ public class ApplyForInternshipModel {
     String facultyname;
     String random;
     String key;
+    String status;
+    String studentID;
+    String offerletter;
+    String comment;
+
+    public String getComment() {
+        return comment;
+    }
+
+    public void setComment(String comment) {
+        this.comment = comment;
+    }
+
+    public String getOfferletter() {
+        return offerletter;
+    }
+
+    public void setOfferletter(String offerletter) {
+        this.offerletter = offerletter;
+    }
+
+    public String getStudentID() {
+        return studentID;
+    }
+
+    public void setStudentID(String studentID) {
+        this.studentID = studentID;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
 
     public String getKey() {
         return key;
@@ -40,7 +78,7 @@ public class ApplyForInternshipModel {
         this.random = random;
     }
 
-    public ApplyForInternshipModel(String firstName, String middleName, String lastName, String userId, String address, String phoneNumber, String companyName, String companyContact, String companyMail, String companyAddress, String semesterTerm, String year, String crn, String creditHours, String creditTitle, String startDate, String enddate, String hoursofwork, String facultymail, String facultyname, String random,String key) {
+    public ApplyForInternshipModel(String firstName, String middleName, String lastName, String userId, String address, String phoneNumber, String companyName, String companyContact, String companyMail, String companyAddress, String semesterTerm, String year, String crn, String creditHours, String creditTitle, String startDate, String enddate, String hoursofwork, String facultymail, String facultyname, String random,String key,String status,String studentID,String letter,String cmmm) {
         FirstName = firstName;
         MiddleName = middleName;
         LastName = lastName;
@@ -63,6 +101,10 @@ public class ApplyForInternshipModel {
         this.facultyname = facultyname;
         this.random = random;
         this.key=key;
+        this.status=status;
+        this.studentID=studentID;
+        this.offerletter=letter;
+        this.comment=cmmm;
     }
 
     public String getFacultymail() {

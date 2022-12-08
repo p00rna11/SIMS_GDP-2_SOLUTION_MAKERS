@@ -174,6 +174,7 @@ public class EmployerInfoActivity extends AppCompatActivity {
                     String address=getIntent().getStringExtra("address");
                     String userid=getIntent().getStringExtra("userid");
                     String phone=getIntent().getStringExtra("phone");
+                    String offerletter=getIntent().getStringExtra("OFFERLETTER");
 
                     Intent intent=new Intent(EmployerInfoActivity.this,StudentAgreement.class);
                     intent.putExtra("start",start);
@@ -196,6 +197,8 @@ public class EmployerInfoActivity extends AppCompatActivity {
                     intent.putExtra("lastname",lastname);
                     intent.putExtra("credit",credit);
                     intent.putExtra("semesterterm",semesterterm);
+                    intent.putExtra("OFFERLETTER",offerletter);
+
                     startActivity(intent);
                 }
 

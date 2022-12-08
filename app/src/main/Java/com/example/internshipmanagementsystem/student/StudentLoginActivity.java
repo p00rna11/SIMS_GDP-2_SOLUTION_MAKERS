@@ -45,8 +45,16 @@ public class StudentLoginActivity extends AppCompatActivity {
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+               /* email.setText("s54321@nwmissouri.edu");
+                password.setText("northwest");
+*/
+
                 String emailUsername = email.getText().toString();
                 String passwordText = password.getText().toString();
+
+
+
 
                 if (CommonUtils.isConnectedToInternet(StudentLoginActivity.this)) {
 
@@ -88,7 +96,7 @@ public class StudentLoginActivity extends AppCompatActivity {
                                         public void onFailure(@NonNull Exception e) {
                                             progressDialog.cancel();
 
-                                            Toast.makeText(StudentLoginActivity.this, "Inavalid Credentials", Toast.LENGTH_LONG).show();
+                                            Toast.makeText(StudentLoginActivity.this, e.getMessage(), Toast.LENGTH_LONG).show();
                                         }
                                     });
                                 } else {

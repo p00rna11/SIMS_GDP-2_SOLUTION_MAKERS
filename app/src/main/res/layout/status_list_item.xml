@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constaint"
+    android:padding="@dimen/_10sdp"
+    android:background="#39806D"
+
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:layout_margin="@dimen/_5sdp"
+        app:cardElevation="@dimen/_10sdp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/_5sdp"
+        android:id="@+id/relativeLayoutl"
+        android:elevation="@dimen/_10sdp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/_5sdp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/nunitosans_light"
+                    android:textColor="#757575"
+                    android:text="Application ID :"
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_height="wrap_content"></TextView>
+                <TextView
+                    android:layout_weight="1"
+                    android:fontFamily="@font/nunitosans_bold"
+
+
+                    android:textSize="@dimen/_13sdp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:id="@+id/update_applicationid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/nunitosans_light"
+                    android:textColor="#757575"
+                    android:text="Company Name :"
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_height="wrap_content"></TextView>
+                <TextView
+                    android:layout_weight="1"
+                    android:fontFamily="@font/nunitosans_bold"
+
+
+                    android:textSize="@dimen/_13sdp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:id="@+id/update_companyName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="Semester :"
+                    android:fontFamily="@font/nunitosans_light"
+                    android:textColor="#757575"
+
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_height="wrap_content"></TextView>
+                <TextView
+                    android:layout_weight="1"
+                    android:fontFamily="@font/nunitosans_bold"
+
+
+                    android:textSize="@dimen/_13sdp"
+                    android:id="@+id/update_semester"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/nunitosans_light"
+                    android:textColor="#757575"
+
+                    android:text="Year :"
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_height="wrap_content"></TextView>
+                <TextView
+                    android:layout_weight="1"
+                    android:textSize="@dimen/_13sdp"
+
+                    android:fontFamily="@font/nunitosans_bold"
+
+                    android:id="@+id/update_year"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_4sdp"
+
+                android:weightSum="2"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/nunitosans_light"
+                    android:textColor="#757575"
+                    android:text="Start Date :"
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_height="wrap_content"></TextView>
+                <TextView
+                    android:layout_weight="1"
+                    android:textSize="@dimen/_13sdp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/nunitosans_bold"
+
+
+                    android:id="@+id/update_startdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="End Date :"
+                    android:fontFamily="@font/nunitosans_light"
+                    android:textColor="#757575"
+
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_height="wrap_content"></TextView>
+                <TextView
+                    android:layout_weight="1"
+                    android:textSize="@dimen/_13sdp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+
+                    android:fontFamily="@font/nunitosans_bold"
+
+                    android:id="@+id/update_enddate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:weightSum="2"
+                android:layout_height="match_parent">
+                <TextView
+
+                    android:fontFamily="@font/nunitosans_light"
+                    android:textColor="#757575"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="Status :"
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_height="wrap_content"></TextView>
+                <TextView
+                    android:layout_weight="1"
+                    android:textSize="@dimen/_13sdp"
+                    android:id="@+id/update_status"
+                    android:fontFamily="@font/nunitosans_bold"
+                    android:textColor="#E61111"
+                    android:textStyle="bold"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:weightSum="2"
+                android:layout_height="match_parent">
+                <TextView
+
+                    android:fontFamily="@font/nunitosans_light"
+                    android:textColor="#757575"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="Comment :"
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_height="wrap_content"></TextView>
+                <TextView
+                    android:layout_weight="1"
+                    android:textSize="@dimen/_13sdp"
+                    android:id="@+id/update_comment"
+                    android:fontFamily="@font/nunitosans_bold"
+                    android:textColor="#E61111"
+                    android:textStyle="bold"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

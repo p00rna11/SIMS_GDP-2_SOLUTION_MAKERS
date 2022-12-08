@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -36,7 +37,14 @@ public class IntershipListAdapter extends RecyclerView.Adapter<IntershipListAdap
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         final ApplyForInternshipModel myListData = listdata.get(position);
-        holder.textView.setText(listdata.get(position).getCompanyName().toString());
+        holder.update_companyName.setText(listdata.get(position).getCompanyName().toString());
+        holder.update_year.setText(listdata.get(position).getYear().toString());
+        holder.update_semester.setText(listdata.get(position).getSemesterTerm().toString());
+        if (listdata.get(position).getStatus().equals("PENDING")){
+            holder.update_status.setText("Under Review");
+        }
+        holder.update_enddate.setText(listdata.get(position).getEnddate().toString());
+        holder.update_startdate.setText(listdata.get(position).getStartDate().toString());
         holder.relativeLayoutl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -54,12 +62,17 @@ public class IntershipListAdapter extends RecyclerView.Adapter<IntershipListAdap
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        public TextView textView;
-        public ConstraintLayout relativeLayoutl;
+        public TextView update_status,update_enddate,update_startdate,update_year,update_semester,update_companyName;
+        public CardView relativeLayoutl;
         public ViewHolder(View itemView) {
             super(itemView);
-            this.textView = (TextView) itemView.findViewById(R.id.detailsText);
-            this.relativeLayoutl = (ConstraintLayout) itemView.findViewById(R.id.constaint);
+            this.update_year = (TextView) itemView.findViewById(R.id.update_year);
+            this.update_companyName = (TextView) itemView.findViewById(R.id.update_companyName);
+            this.update_semester = (TextView) itemView.findViewById(R.id.update_semester);
+            this.update_status = (TextView) itemView.findViewById(R.id.update_status);
+            this.update_enddate = (TextView) itemView.findViewById(R.id.update_enddate);
+            this.update_startdate = (TextView) itemView.findViewById(R.id.update_startdate);
+            this.relativeLayoutl = (CardView) itemView.findViewById(R.id.relativeLayoutl);
         }
     }
 }

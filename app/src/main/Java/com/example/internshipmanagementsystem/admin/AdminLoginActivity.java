@@ -48,6 +48,11 @@ public class AdminLoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String emailUsername = email.getText().toString();
                 String passwordText = password.getText().toString();
+// Default Username And Password
+/*
+                 emailUsername="admin01@nwmissouri.edu";
+                 passwordText="northwest";
+*/
 
 
                 if(CommonUtils.isConnectedToInternet(AdminLoginActivity.this)){
@@ -78,7 +83,7 @@ public class AdminLoginActivity extends AppCompatActivity {
                                 public void onFailure(@NonNull Exception e) {
                                     progressDialog.cancel();
 
-                                    Toast.makeText(AdminLoginActivity.this, "Inavalid Credentials", Toast.LENGTH_LONG).show();
+                                    Toast.makeText(AdminLoginActivity.this, e.getMessage(), Toast.LENGTH_LONG).show();
                                 }
                             });
                         }else{

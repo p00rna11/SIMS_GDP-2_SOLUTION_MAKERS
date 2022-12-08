@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".student.StudentDashboard">
+
+    <ImageView
+        android:layout_width="@dimen/_30sdp"
+        android:src="@drawable/ic_logout"
+        android:id="@+id/id_logout"
+        android:layout_margin="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="@dimen/_30sdp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/profilepicture"
+        app:civ_border_color="#FF000000"/>
+
+    <TextView
+        android:id="@+id/loggedInUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="Hello, Student! "
+        android:textSize="@dimen/_26sdp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/nunitosans_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        app:layout_constraintTop_toBottomOf="@id/loggedInUser"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:weightSum="2"
+        android:id="@+id/toplayout"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/applyForInternship"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/_15sdp"
+            android:background="@color/white"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/northwest_green"
+            app:cardCornerRadius="@dimen/_12sdp"
+            app:cardElevation="@dimen/_10sdp"
+            tools:ignore="KeyboardInaccessibleWidget,SpeakableTextPresentCheck">
+
+            <ImageView
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_13sdp"
+                android:src="@drawable/formicon"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_gravity="bottom"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunitosans_light"
+                android:text="Apply"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/statusCard"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/_15sdp"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/northwest_green"
+            app:cardCornerRadius="@dimen/_12sdp"
+            app:cardElevation="@dimen/_10sdp"
+            tools:ignore="KeyboardInaccessibleWidget,SpeakableTextPresentCheck">
+
+            <ImageView
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/formstatus"
+                android:layout_marginBottom="@dimen/_13sdp"
+
+                tools:ignore="ContentDescription" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:fontFamily="@font/nunitosans_light"
+                android:text="Status"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp" />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_height="@dimen/_150sdp"
+        app:layout_constraintTop_toBottomOf="@id/toplayout"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/updateCard"
+            android:layout_weight="1"
+            android:background="@color/white"
+
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/_15sdp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/northwest_green"
+            app:cardCornerRadius="@dimen/_12sdp"
+            app:cardElevation="@dimen/_10sdp"
+            tools:ignore="KeyboardInaccessibleWidget,SpeakableTextPresentCheck">
+
+            <ImageView
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_13sdp"
+                android:src="@drawable/updatelogo"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_gravity="bottom"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunitosans_light"
+                android:text="Update/Drop"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp" />
+        </androidx.cardview.widget.CardView>
+
+        <!--<androidx.cardview.widget.CardView
+            android:id="@+id/findingInternship"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+
+            android:layout_margin="@dimen/_15sdp"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/northwest_green"
+            app:cardCornerRadius="@dimen/_12sdp"
+            app:cardElevation="@dimen/_10sdp"
+            tools:ignore="KeyboardInaccessibleWidget,SpeakableTextPresentCheck">
+
+            <ImageView
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/searchlogo"
+                android:layout_marginBottom="@dimen/_13sdp"
+
+                tools:ignore="ContentDescription" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:fontFamily="@font/nunitosans_light"
+                android:text="Find"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp" />
+        </androidx.cardview.widget.CardView>
+-->
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

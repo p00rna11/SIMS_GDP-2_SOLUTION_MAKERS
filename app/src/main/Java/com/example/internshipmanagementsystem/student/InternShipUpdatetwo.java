@@ -40,7 +40,7 @@ public class InternShipUpdatetwo extends AppCompatActivity {
             entercompanymail, entercompanyaddress,enterstart,
             enterenddate, enterhoursofwork,enterFacultyname,enterFacultymail;
     TextView startDate,endDate;
-    String random="";
+    String random="",offerletter="";
     ProgressDialog progressDialog;
 
     @Override
@@ -190,6 +190,7 @@ public class InternShipUpdatetwo extends AppCompatActivity {
                     String address=getIntent().getStringExtra("address");
                     String userid=getIntent().getStringExtra("userid");
                     String phone=getIntent().getStringExtra("phone");
+                    String letter=getIntent().getStringExtra("OFFERLTERR");
 
                     Intent intent=new Intent(InternShipUpdatetwo.this,StudentAgreement.class);
                     intent.putExtra("start",start);
@@ -217,6 +218,10 @@ public class InternShipUpdatetwo extends AppCompatActivity {
 
                     if (CommonUtils.isConnectedToInternet(InternShipUpdatetwo.this)) {
                         try {
+
+                            progressDialog = new ProgressDialog(InternShipUpdatetwo.this);
+                            progressDialog.setMessage("Updating Details....");
+                            progressDialog.show();
                             String key = getIntent().getStringExtra("STUDENTKEY");
 
                             FirebaseDatabase database = FirebaseDatabase.getInstance();
@@ -225,9 +230,10 @@ public class InternShipUpdatetwo extends AppCompatActivity {
 
                             ApplyForInternshipModel applyForInternshipModel = new ApplyForInternshipModel(
                                     firstname, middlename, lastname, userid, address, phone,
-                                    companyname, companycontact, companymail, companyaddress, semesterterm, year, crn, credithours, credit, start, enddate, hoursofwork, facultymail, facultyname, random, key);
+                                    companyname, companycontact, companymail, companyaddress, semesterterm, year, crn, credithours, credit, start, enddate, hoursofwork, facultymail, facultyname, random, key,"PENDING",studentID,letter,"");
 
                             myRef.setValue(applyForInternshipModel);
+                            progressDialog.cancel();
                             Intent intents = new Intent(InternShipUpdatetwo.this, StudentDashboard.class);
                             startActivity(intents);
                             finish();

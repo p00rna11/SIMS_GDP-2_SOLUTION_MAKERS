@@ -17,6 +17,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.InternshipManagementSystem">
         <activity
+            android:name=".faculty.OfferletterPreviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".faculty.PrevoiusSemeterInternActivity"
+            android:exported="false" />
+        <activity
+            android:name=".faculty.CurrentSemesterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".faculty.CurrentSemeterInternActivity"
+            android:exported="false" />
+        <activity
+            android:name=".faculty.OutStateInternActivity"
+            android:exported="false" />
+        <activity
             android:name=".student.InternShipUpdateone"
             android:exported="false" />
         <activity

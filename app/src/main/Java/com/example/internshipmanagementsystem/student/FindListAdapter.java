@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -38,7 +39,7 @@ import java.util.ArrayList;
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         final ApplyForInternshipModel myListData = listdata.get(position);
-        holder.textView.setText(listdata.get(position).getCompanyName().toString());
+/*        holder.textView.setText(listdata.get(position).getCompanyName().toString());
         holder.relativeLayoutl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -46,7 +47,7 @@ import java.util.ArrayList;
                 intent.putExtra("STUDENTKEY", listdata.get(position).getKey());
                 internshipListActivity.startActivity(intent);
             }
-        });
+        });*/
 
     }
 
@@ -58,11 +59,11 @@ import java.util.ArrayList;
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
         public TextView textView;
-        public ConstraintLayout relativeLayoutl;
+        public CardView relativeLayoutl;
         public ViewHolder(View itemView) {
             super(itemView);
-            this.textView = (TextView) itemView.findViewById(R.id.detailsText);
-            this.relativeLayoutl = (ConstraintLayout) itemView.findViewById(R.id.constaint);
+        //    this.textView = (TextView) itemView.findViewById(R.id.detailsText);
+            this.relativeLayoutl = (CardView ) itemView.findViewById(R.id.constaint);
         }
     }
 }

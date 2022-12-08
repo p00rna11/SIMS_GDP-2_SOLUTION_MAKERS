@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
@@ -13,6 +14,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.internshipmanagementsystem.CommonUtils;
@@ -37,7 +39,7 @@ public class InternShipUpdateone extends AppCompatActivity implements AdapterVie
             enterenddate, enterhoursofwork;
 
     private Spinner spinnerFall, spinnerYear;
-    String semYear, totalyear;
+    String semYear, totalyear,offerletter="";
     private static final String[] paths = {"Fall", "Spring", "Summer"};
 
     ProgressDialog progressDialog;
@@ -79,6 +81,7 @@ public class InternShipUpdateone extends AppCompatActivity implements AdapterVie
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 totalyear = String.valueOf(adapterView.getItemAtPosition(i));
+                ((TextView) adapterView.getChildAt(0)).setTextColor(Color.BLACK); /* if you want your item to be white */
 
             }
 
@@ -158,6 +161,7 @@ public class InternShipUpdateone extends AppCompatActivity implements AdapterVie
                     intent.putExtra("userid", userid);
                     intent.putExtra("phone", phone);
                     intent.putExtra("STUDENTKEY", key);
+                    intent.putExtra("OFFERLTERR",offerletter);
                     startActivity(intent);
 
                 }
@@ -219,6 +223,7 @@ public class InternShipUpdateone extends AppCompatActivity implements AdapterVie
         entercredit.setText(model.getCreditTitle());
         spinnerFall.setSelection(Arrays.asList(paths).indexOf(model.getSemesterTerm()));
         spinnerYear.setSelection(Arrays.asList(paths).indexOf(model.getYear()));
+        offerletter= model.getOfferletter();
 
 
     }
@@ -246,12 +251,18 @@ public class InternShipUpdateone extends AppCompatActivity implements AdapterVie
         switch (i) {
             case 0:
                 semYear = "Fall";
+                ((TextView) adapterView.getChildAt(0)).setTextColor(Color.BLACK); /* if you want your item to be white */
+
                 break;
             case 1:
                 semYear = "Spring";
+                ((TextView) adapterView.getChildAt(0)).setTextColor(Color.BLACK); /* if you want your item to be white */
+
                 break;
             case 2:
                 semYear = "Summer";
+                ((TextView) adapterView.getChildAt(0)).setTextColor(Color.BLACK); /* if you want your item to be white */
+
                 break;
 
         }

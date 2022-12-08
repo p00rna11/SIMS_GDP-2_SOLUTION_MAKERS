@@ -1,20 +1,562 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="@dimen/_10sdp"
     android:background="@color/white"
     tools:context=".faculty.InternStudentDetails">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:text="Student Details"
-        android:textSize="@dimen/_20sdp"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:gravity="center"
-        android:layout_height="@dimen/_60sdp">
-    </TextView>
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:text=" First Name :"
+                android:fontFamily="@font/nunitosans_light"
+                android:textColor="#757575"
+                android:textSize="@dimen/_14sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/details_firstname"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+
+                android:fontFamily="@font/alike_angular"
+               ></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:textSize="@dimen/_14sdp"
+                android:fontFamily="@font/nunitosans_light"
+                android:textColor="#757575"
+                android:text="Middle Name :"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <TextView
+
+                android:textSize="@dimen/_14sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/details_middlename"
+                android:textColor="@color/black"
+                android:fontFamily="@font/alike_angular"
+        ></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_3sdp"
+
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+
+                android:textSize="@dimen/_14sdp"
+                android:text="Last Name :"
+                android:fontFamily="@font/nunitosans_light"
+                android:textColor="#757575"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textSize="@dimen/_14sdp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:id="@+id/details_lastname"
+                android:fontFamily="@font/alike_angular"
+               ></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:textSize="@dimen/_14sdp"
+
+                android:text="User ID :"
+                android:fontFamily="@font/nunitosans_light"
+                android:textColor="#757575"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textSize="@dimen/_14sdp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:id="@+id/details_userid"
+                android:fontFamily="@font/alike_angular"
+                ></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_3sdp"
+
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:textSize="@dimen/_14sdp"
+                android:text="Phone Number :"
+                android:fontFamily="@font/nunitosans_light"
+                android:textColor="#757575"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textSize="@dimen/_14sdp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:id="@+id/details_phonenumber"
+                android:fontFamily="@font/alike_angular"
+                ></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:text="Semester :"
+                android:textSize="@dimen/_14sdp"
+                android:fontFamily="@font/nunitosans_light"
+                android:textColor="#757575"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textSize="@dimen/_14sdp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:id="@+id/details_semester"
+                android:fontFamily="@font/alike_angular"
+                ></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:textSize="@dimen/_14sdp"
+                android:text="Year :"
+                android:fontFamily="@font/nunitosans_light"
+                android:textColor="#757575"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textSize="@dimen/_14sdp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:id="@+id/details_year"
+                android:fontFamily="@font/alike_angular"
+                ></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/_14sdp"
+                android:layout_weight="1"
+                android:text="CRN :"
+                android:fontFamily="@font/nunitosans_light"
+                android:textColor="#757575"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/_14sdp"
+                android:id="@+id/details_crn"
+                android:textColor="@color/black"
+                android:fontFamily="@font/alike_angular"
+                ></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:text="Credit Hours :"
+                android:textSize="@dimen/_14sdp"
+                android:fontFamily="@font/nunitosans_light"
+                android:textColor="#757575"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <TextView
+                android:textSize="@dimen/_14sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/details_credithrs"
+                android:textColor="@color/black"
+                android:fontFamily="@font/alike_angular"
+                ></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:textSize="@dimen/_14sdp"
+                android:text="Credit Title :"
+                android:fontFamily="@font/nunitosans_light"
+                android:textColor="#757575"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_14sdp"
+                android:layout_weight="1"
+                android:id="@+id/details_title"
+                android:textColor="@color/black"
+                android:fontFamily="@font/alike_angular"
+                ></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:textSize="@dimen/_14sdp"
+                android:text="Company Name :"
+                android:fontFamily="@font/nunitosans_light"
+                android:textColor="#757575"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textSize="@dimen/_14sdp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/details_companyname"
+                android:textColor="@color/black"
+                android:fontFamily="@font/alike_angular"
+                ></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:text="Company Contact:"
+                android:textSize="@dimen/_14sdp"
+                android:fontFamily="@font/nunitosans_light"
+                android:textColor="#757575"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/_14sdp"
+                android:id="@+id/details_companycontact"
+                android:textColor="@color/black"
+                android:fontFamily="@font/alike_angular"
+                ></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:text="Company Email:"
+                android:fontFamily="@font/nunitosans_light"
+                android:textColor="#757575"
+
+                android:textSize="@dimen/_14sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/black"
+                android:id="@+id/details_companyemail"
+                android:fontFamily="@font/alike_angular"
+                ></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:text="Company Address :"
+                android:textSize="@dimen/_14sdp"
+                android:fontFamily="@font/nunitosans_light"
+                android:textColor="#757575"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <TextView
+                android:textSize="@dimen/_14sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/details_companyaddress"
+                android:textColor="@color/black"
+                android:fontFamily="@font/alike_angular"
+                ></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:textSize="@dimen/_14sdp"
+                android:text="Start Date :"
+                android:fontFamily="@font/nunitosans_light"
+                android:textColor="#757575"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/_14sdp"
+                android:id="@+id/details_startdate"
+                android:textColor="@color/black"
+                android:fontFamily="@font/alike_angular"
+                ></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:textSize="@dimen/_14sdp"
+                android:text="End Date :"
+                android:fontFamily="@font/nunitosans_light"
+                android:textColor="#757575"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_14sdp"
+                android:layout_weight="1"
+                android:id="@+id/details_enddate"
+                android:textColor="@color/black"
+                android:fontFamily="@font/alike_angular"
+                ></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:textSize="@dimen/_14sdp"
+                android:text="Hours of Work :"
+                android:fontFamily="@font/nunitosans_light"
+                android:textColor="#757575"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/black"
+                android:id="@+id/details_hrsofwork"
+                android:fontFamily="@font/alike_angular"
+                ></TextView>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:text="Show Offer Letter"
+            android:id="@+id/showOfferletter"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/id_comment"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:hint="enter comment"
+            android:textColor="#757575"
+            android:textColorHint="#757575"
+            android:padding="@dimen/_10sdp"
+            android:background="@drawable/rectableboxxx"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="@dimen/_70sdp"
+                android:text="Reject"
+                android:id="@+id/rejected"
+                android:fontFamily="@font/nunitosans_semibold"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:padding="@dimen/_5sdp"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="@dimen/_70sdp"
+                android:text="Approve"
+                android:id="@+id/intern_approve"
+
+                android:fontFamily="@font/nunitosans_semibold"
+                android:textColor="@color/white"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:padding="@dimen/_5sdp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:text="Under Review"
+                android:visibility="gone"
+                android:fontFamily="@font/nunitosans_semibold"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:padding="@dimen/_5sdp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

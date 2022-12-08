@@ -35,10 +35,10 @@ public class FindInternship extends AppCompatActivity {
         intership_recycerview=findViewById(R.id.searchList);
         intership_recycerview.setLayoutManager(new LinearLayoutManager(this));
         ArrayList<ApplyForInternshipModel> list=new ArrayList<>();
-        adapter=new FindListAdapter(this,list);
+      //  adapter=new FindListAdapter(this,list);
         getData(list);
         if(list!=null){
-            intership_recycerview.setAdapter(adapter);
+        //    intership_recycerview.setAdapter(adapter);
         }
     }
 

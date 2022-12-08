@@ -50,8 +50,20 @@ public class FacultyLoginActivity extends AppCompatActivity {
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+/*
+
+                email.setText("facid@nwmissouri.edu");
+                password.setText("northwest");
+*//*
+
+                email.setText("Azizfellah@nwmissouri.edu");
+                password.setText("northwest");
+*/
+
                 String emailUsername = email.getText().toString();
                 String passwordText = password.getText().toString();
+
+
 
 
                 if (CommonUtils.isConnectedToInternet(FacultyLoginActivity.this)) {
@@ -78,12 +90,14 @@ public class FacultyLoginActivity extends AppCompatActivity {
                                     progressDialog.show();
 
 
+                                    String email=emailUsername;
                                     mAuth.signInWithEmailAndPassword(emailUsername, passwordText).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                                         @Override
                                         public void onComplete(@NonNull Task<AuthResult> task) {
                                             progressDialog.cancel();
                                             if (task.isSuccessful()) {
                                                 Intent intent = new Intent(FacultyLoginActivity.this, FacultyDashboard.class);
+                                                intent.putExtra("FACULTYEMAIL",email);
                                                 startActivity(intent);
                                             } else {
                                                 Toast.makeText(FacultyLoginActivity.this, "Inavalid Credentials", Toast.LENGTH_LONG).show();
@@ -95,7 +109,7 @@ public class FacultyLoginActivity extends AppCompatActivity {
                                         public void onFailure(@NonNull Exception e) {
                                             progressDialog.cancel();
 
-                                            Toast.makeText(FacultyLoginActivity.this, "Inavalid Credentials", Toast.LENGTH_LONG).show();
+                                            Toast.makeText(FacultyLoginActivity.this, e.getMessage(), Toast.LENGTH_LONG).show();
                                         }
                                     });
                                 } else {

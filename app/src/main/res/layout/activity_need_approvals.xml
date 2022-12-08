@@ -7,8 +7,7 @@
     android:background="@color/white"
     android:padding="@dimen/_5sdp"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".faculty.CurrentSemeterInternActivity">
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,6 +26,7 @@
                 android:text="Name"
                 android:layout_gravity="center"
                 android:gravity="center"
+                android:fontFamily="@font/nunitosans_semibold"
                 android:textSize="@dimen/_18sdp"
                 android:textColor="@color/black"
                 android:textStyle="bold"
@@ -41,7 +41,7 @@
                 android:layout_width="match_parent"
                 android:text="App ID"
                 android:textColor="@color/black"
-
+                android:fontFamily="@font/nunitosans_semibold"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:textSize="@dimen/_18sdp"
@@ -57,7 +57,7 @@
                 android:layout_width="match_parent"
                 android:text="Status"
                 android:textColor="@color/black"
-
+                android:fontFamily="@font/nunitosans_semibold"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:textSize="@dimen/_18sdp"
@@ -65,219 +65,14 @@
                 android:layout_height="match_parent"/>
         </LinearLayout>
     </LinearLayout>
-
-    <LinearLayout
+    <View
         android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:id="@+id/firstLinearLayout"
-        android:weightSum="3"
-        android:layout_marginTop="@dimen/_5sdp"
-        app:layout_constraintTop_toBottomOf="@id/firstLayout"
-        android:layout_height="wrap_content">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_weight="1"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="match_parent"
-                android:text="Karthik"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:textSize="@dimen/_15sdp"
-                android:textColor="@color/black"
-                android:layout_height="match_parent"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_weight="1"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="match_parent"
-                android:text="12356"
-                android:textColor="@color/black"
-
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:textSize="@dimen/_15sdp"
-                android:layout_height="match_parent"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_weight="1"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="match_parent"
-                android:text="pending"
-                android:textColor="@color/black"
-
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:textSize="@dimen/_15sdp"
-                android:layout_height="match_parent"/>
-        </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_marginTop="4dp"/>
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:weightSum="3"
-        android:id="@+id/secondLinearLayout"
         android:layout_marginTop="@dimen/_5sdp"
-        app:layout_constraintTop_toBottomOf="@id/firstLayout"
-        android:layout_height="wrap_content">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_weight="1"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="match_parent"
-                android:text="ram"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:textSize="@dimen/_15sdp"
-                android:textColor="@color/black"
-                android:layout_height="match_parent"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_weight="1"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="match_parent"
-                android:text="12356"
-                android:textColor="@color/black"
-
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:textSize="@dimen/_15sdp"
-                android:layout_height="match_parent"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_weight="1"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="match_parent"
-                android:text="pending"
-                android:textColor="@color/black"
-
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:textSize="@dimen/_15sdp"
-                android:layout_height="match_parent"/>
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:weightSum="3"
-        android:id="@+id/thirdLinearLayout"
-        android:layout_marginTop="@dimen/_5sdp"
-        app:layout_constraintTop_toBottomOf="@id/firstLayout"
-        android:layout_height="wrap_content">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_weight="1"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="match_parent"
-                android:text="suresh"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:textSize="@dimen/_15sdp"
-                android:textColor="@color/black"
-                android:layout_height="match_parent"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_weight="1"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="match_parent"
-                android:text="12356"
-                android:textColor="@color/black"
-
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:textSize="@dimen/_15sdp"
-                android:layout_height="match_parent"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_weight="1"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="match_parent"
-                android:text="pending"
-                android:textColor="@color/black"
-
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:textSize="@dimen/_15sdp"
-                android:layout_height="match_parent"/>
-        </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:weightSum="3"
-        android:id="@+id/fourLinearLayout"
-        android:layout_marginTop="@dimen/_5sdp"
-        app:layout_constraintTop_toBottomOf="@id/firstLayout"
-        android:layout_height="wrap_content">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_weight="1"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="match_parent"
-                android:text="Rahul"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:textSize="@dimen/_15sdp"
-                android:textColor="@color/black"
-                android:layout_height="match_parent"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_weight="1"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="match_parent"
-                android:text="12356"
-                android:textColor="@color/black"
-
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:textSize="@dimen/_15sdp"
-                android:layout_height="match_parent"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_weight="1"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="match_parent"
-                android:text="pending"
-                android:textColor="@color/black"
-
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:textSize="@dimen/_15sdp"
-                android:layout_height="match_parent"/>
-        </LinearLayout>
-    </LinearLayout>
-
+        android:id="@+id/listview_totalIntern"
+        android:layout_height="match_parent"/>
 </LinearLayout>

@@ -30,6 +30,7 @@ import android.widget.Toast;
 
 import com.example.internshipmanagementsystem.MainActivity;
 import com.example.internshipmanagementsystem.R;
+import com.example.internshipmanagementsystem.faculty.FacultyDashboard;
 import com.google.android.gms.tasks.Continuation;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -72,11 +73,12 @@ public class StudentDashboard extends AppCompatActivity {
         statusCard = findViewById(R.id.statusCard);
         updateCard = findViewById(R.id.updateCard);
         loggedInUser = findViewById(R.id.loggedInUser);
-        findInternship = findViewById(R.id.findingInternship);
+      //  findInternship = findViewById(R.id.findingInternship);
         id_logout = findViewById(R.id.id_logout);
 
 
         try {
+
             getimage();
         } catch (Exception e) {
             e.printStackTrace();
@@ -92,8 +94,14 @@ public class StudentDashboard extends AppCompatActivity {
         id_logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+
                 FirebaseAuth.getInstance().signOut();
-                //startActivity(new Intent(StudentDashboard.this,StudentLoginActivity.class));
+                Intent intent=new Intent(StudentDashboard.this, MainActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|
+                        Intent.FLAG_ACTIVITY_CLEAR_TASK |
+                        Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
                 finish();
             }
         });
@@ -101,6 +109,7 @@ public class StudentDashboard extends AppCompatActivity {
         applyCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 startActivity(new Intent(StudentDashboard.this, ApplyForInternship.class));
             }
         });
@@ -119,12 +128,14 @@ public class StudentDashboard extends AppCompatActivity {
             }
         });
 
+/*
         findInternship.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(StudentDashboard.this, FindInternship.class));
+            //    startActivity(new Intent(StudentDashboard.this, FindInternship.class));
             }
         });
+*/
 
     }
 
@@ -239,7 +250,6 @@ public class StudentDashboard extends AppCompatActivity {
                     if (!task.isSuccessful()) {
                         throw task.getException();
                     }
-
                     // Continue with the task to get the download URL
                     return ref.getDownloadUrl();
                 }

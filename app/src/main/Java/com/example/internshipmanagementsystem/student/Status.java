@@ -2,7 +2,10 @@ package com.example.internshipmanagementsystem.student;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
@@ -10,6 +13,7 @@ import android.view.WindowManager;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.internshipmanagementsystem.CommonUtils;
 import com.example.internshipmanagementsystem.R;
 import com.example.internshipmanagementsystem.model.ApplyForInternshipModel;
 import com.google.firebase.auth.FirebaseAuth;
@@ -19,55 +23,66 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.ArrayList;
+
 public class Status extends AppCompatActivity {
 
-    TextView txtApplicationIDStatus;
+    RecyclerView intership_recycerview;
+    ProgressDialog progressDialog;
+    StatusIntershipListAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_status);
-        txtApplicationIDStatus = findViewById(R.id.txtApplicationIDStatus);
-        getapplicationID();
+        intership_recycerview=findViewById(R.id.intership_recycerview);
+        intership_recycerview.setLayoutManager(new LinearLayoutManager(this));
+        ArrayList<ApplyForInternshipModel> list = new ArrayList<>();
+        adapter = new StatusIntershipListAdapter(this, list);
+        getData(list);
+        if (list != null) {
+            intership_recycerview.setAdapter(adapter);
+        }
 
     }
 
-    private void getapplicationID() {
+
+    private void getData(ArrayList<ApplyForInternshipModel> list) {
+
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         String studentID = FirebaseAuth.getInstance().getCurrentUser().getUid();
         DatabaseReference myRef = database.getReference("student").child("applyForInternship").child(studentID);
 
-        myRef.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                if (snapshot != null) {
-                    ApplyForInternshipModel model = snapshot.getValue(ApplyForInternshipModel.class);
-                    if (model != null) {
-                        Log.d("ApplyForInternshipModel", model.toString());
-                        if (TextUtils.isEmpty(model.getPhoneNumber())) {
+        progressDialog = new ProgressDialog(Status.this);
+        progressDialog.setMessage("Loading....");
+        progressDialog.show();
 
-                        } else {
-                            setDatatoViews(model);
+        if (CommonUtils.isConnectedToInternet(Status.this)) {
+
+
+            myRef.addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                    list.clear();
+
+                    if (snapshot != null) {
+                        for (DataSnapshot postSnapshot : snapshot.getChildren()) {
+                            ApplyForInternshipModel applyForInternshipModel = postSnapshot.getValue(ApplyForInternshipModel.class);
+                            list.add(applyForInternshipModel);
                         }
-                    } else {
-                        Toast.makeText(Status.this, "No Data", Toast.LENGTH_LONG).show();
-                        finish();
+                        adapter.notifyDataSetChanged();
                     }
-
+                    progressDialog.cancel();
                 }
-            }
 
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-                Toast.makeText(Status.this, "Please try again after sometime....", Toast.LENGTH_SHORT).show();
-            }
-        });
-
+                @Override
+                public void onCancelled(@NonNull DatabaseError error) {
+                    progressDialog.cancel();
+                    Toast.makeText(Status.this, "Please try again after sometime....", Toast.LENGTH_SHORT).show();
+                }
+            });
+        }
     }
 
-    private void setDatatoViews(ApplyForInternshipModel model) {
-        String phone = model.getRandom();
-        txtApplicationIDStatus.setText("Your application id is: " + phone);
 
-    }
 }
